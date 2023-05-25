@@ -2,22 +2,23 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Codificador/Decodificador</title>
+  <title>Codificador de Mensagens</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <h1>Codificador/Decodificador</h1>
+  <h1>Codificador de Mensagens</h1>
   <div class="container">
-    <textarea id="input-text" placeholder="Digite o texto..." rows="4"></textarea>
-    <div class="options">
-      <label for="encrypt-radio">Criptografar</label>
-      <input type="radio" id="encrypt-radio" name="option" checked>
-      <label for="decrypt-radio">Descriptografar</label>
-      <input type="radio" id="decrypt-radio" name="option">
-    </div>
-    <button id="convert-btn">Converter</button>
-    <button id="copy-btn">Copiar</button>
-    <textarea id="output-text" placeholder="Resultado..." rows="4" readonly></textarea>
+    <section>
+      <textarea id="input-text" placeholder="Digite o texto..." rows="30" cols="60"></textarea>
+      <button id="convert-btn" onclick="criptografar()">Criptografar</button>   
+    </section>
+   
+   <section>
+    <textarea id="output-text" placeholder="Resultado..." rows="30" cols="60" ></textarea>
+    <button id="convert-btn" onchange="clean()" onclick="desencriptar()">Descriptografar</button>
+   </section>
+    
+   
   </div>
   <script src="script.js"></script>
 </body>
