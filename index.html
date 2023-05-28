@@ -6,20 +6,35 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <header><a href="https://www.alura.com.br/" target="_blank"><img src="logoAlura.png" alt="logo"></a></header>
+  
   <h1>Codificador de Mensagens</h1>
   <div class="container">
     <section>
-      <textarea id="input-text" placeholder="Digite o texto..." rows="30" cols="60"></textarea>
-      <button id="convert-btn" onclick="criptografar()">Criptografar</button>   
-    </section>
-   
+      <div>
+        <textarea id="input-text" placeholder="Digite o texto..." rows="30" cols="60"></textarea>    
+      </div>
+      <div>
+      <button  onclick="criptografar()">Criptografar</button>   
+      <button  onchange="clean()" onclick="desencriptar()">Descriptografar</button>
+    </div>  
+    </section>       
    <section>
-    <textarea id="output-text" placeholder="Resultado..." rows="30" cols="60" ></textarea>
-    <button id="convert-btn" onchange="clean()" onclick="desencriptar()">Descriptografar</button>
-   </section>
+    <textarea id="output-text"  rows="30" cols="60"  disabled></textarea>
+    <div id="message" class="message">
+      <h2>Nenhuma mensagem encontrado.<br> Digite o texto a ser Criptografado ou Descriptografar</h2>
+    </div>
     
+   </section>
+   <div class="button">
+    
+    <img src="boneco.png" alt="boneco alura">
+  </div>
    
   </div>
   <script src="script.js"></script>
 </body>
+<footer>
+  <h6>Developed by Robert</h6>
+</footer>
 </html>

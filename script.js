@@ -2,17 +2,19 @@
 
   function criptografar(){
     var text = document.getElementById('input-text');
-    var valor = text.value;
+    var valor = text.value.toLowerCase();
+    console.log(valor);
     var outputText = encriptar(valor)
     document.getElementById('output-text').value = outputText;
-    
+   
     
   }
   function desencriptar(){
     var text = document.getElementById('output-text');
     var valor = text.value;
     var inputText = decriptar(valor);
-    document.getElementById('input-text').value = inputText;
+    document.getElementById('output-text').value = inputText;
+    
   }
  
   function encriptar(text){

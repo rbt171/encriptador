@@ -1,9 +1,14 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(5, 5, 49);
+    background-color: rgb(155, 155, 181);
   }
   h1{
-    color: azure;
+    color: azure;    
+    margin-left: 118px;
+  }
+  .message{
+    text-align: center;
+    display: flex;
   }
   
   .container {
@@ -19,9 +24,36 @@ body {
   }
   textarea {
     margin-bottom: 10px;
+    border-radius: 5%;
+    padding: 50px;
   }
-  
+  #output-text{
+    background-color: white;
+  }
   button {
     margin-top: 10px;
+    margin-right: 30px;
+    display: inline-block;
+    
+      background-color: #0A3871;
+      border: 1px solid #0A3871;
+      border-radius: 24px;
+      color: white;
+      cursor: pointer;
+      height: 35px;
+      width: 200px;
+      opacity: 1;
+      transition: 1s;
+      box-shadow: 8px 8px 8px 0 #122157;
+  }
+   
+    
+  
+  h6{
+    width: auto;
+    font-size: 12px;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
     
   }
