@@ -6,23 +6,26 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <header><a href="https://www.alura.com.br/" target="_blank"><img src="logoAlura.png" alt="logo"></a></header>
+  <header>
+    <a href="https://www.alura.com.br/" target="_blank"><img src="logoAlura.png" alt="logo"></a>
+    <h1>Codificador de Mensagens</h1>
+  </header>
   
-  <h1>Codificador de Mensagens</h1>
+  
   <div class="container">
     <section>
       <div>
-        <textarea id="input-text" placeholder="Digite o texto..." rows="30" cols="60"></textarea>    
+        <textarea id="input-text" placeholder="Digite o texto sem acentos..." rows="30" cols="60"></textarea>    
       </div>
       <div>
       <button  onclick="criptografar()">Criptografar</button>   
-      <button  onchange="clean()" onclick="desencriptar()">Descriptografar</button>
+      <button   onclick="desencriptar()">Descriptografar</button>
     </div>  
     </section>       
    <section>
     <textarea id="output-text"  rows="30" cols="60"  disabled></textarea>
     <div id="message" class="message">
-      <h2>Nenhuma mensagem encontrado.<br> Digite o texto a ser Criptografado ou Descriptografar</h2>
+      <span>Nenhuma mensagem encontrada.<br> Digite o texto a ser Criptografado ou Descriptografado</span>
     </div>
     
    </section>

@@ -2,10 +2,12 @@
 
   function criptografar(){
     var text = document.getElementById('input-text');
-    var valor = text.value.toLowerCase();
-    console.log(valor);
+    var valor = text.value.toLowerCase();   
     var outputText = encriptar(valor)
+    var div = document.getElementById('message');
+    console.log(div)
     document.getElementById('output-text').value = outputText;
+    div.setAttribute('style', 'display:none;')
    
     
   }
@@ -32,7 +34,5 @@
     .replace(/ufat/g, 'u');
   }
   
-  function clean(){
-    document.getElementById('input-text').value = '';
-  }
+  
   
